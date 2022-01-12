@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html manifest="SALT.manifest"><head>
+<title>LAZARUS KING for 9.00 FW</title>
+<link rel="stylesheet prefetch" href="Style.css">
+<style>
+html, body {
+//background-image: url('1.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+//background-color: #24272b;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
+  .themes {
+   width:98%;
+   margin:0 auto;
+   margin-left:2%;
+   margin-top:2%;
+  }
+  .theme {
+    background:rgba(0,0,0,0.75);
+    width:14.1%;
+    text-align:center;
+    display:inline-block;
+    margin-right:2.5%;
+    margin-bottom:2.5%;
+  }
+  .theme img {
+    width:100%;
+  }
+  .theme span  {
+   color:white;
+   display:block;
+   padding:10px;
+  }
+  
+        button2 {
+		  background:rgba(0,0,0,0.5);
+		  box-shadow: 0 5px 20px 0 white;
+		  border: 2px solid black;
+		  border-radius: 10px;
+		  color: white;
+		  text-decoration: none;
+		  width: 200px;
+          height: 40px;
+		  display:inline-table;
+		  font-family: system-ui;
+		  text-align: center;
+		}
+
+		button2:focus,
+		button2:hover {
+		  color: White;
+		  box-shadow: 0 5px 50px 0 white;
+		  background-color: #87FF33;
+          border-radius: 10px;
+		}
+		
+        button {
+                    background-color: white;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    text-align: center;
+        }
+        button:hover {
+                    box-shadow: 0 5px 50px 0 white;
+                    color: white;
+                    border-radius: 10px;
+        }
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+.btn {
+background-color: #003263;
+color: white;
+width: 260px;
+height: 49px;
+padding-bottom: 5px;
+text-align: center;
+font-size: 20px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 8px;
+margin-right: 8px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 8px;
+}
+.btn:hover {
+background-color: #0058b1;
+}
+.btn-toolbox {
+background-color: #ae2301;
+}
+.btn-toolbox:hover {
+background-color: #d42a01;
+}
+</style>
+<script>
+function DLProgress(e){
+	parent.ScrOverlay.style.display="block";
+	Percent=(Math.round(e.loaded / e.total * 100));
+	parent.cacheUPDtxt.innerHTML="Installing Offline Cache: " + Percent + "%";
+	parent.CacheBar.style.width=Percent + '%';
+}
+function DisplayCacheProgress(){
+	setTimeout(function(){parent.cacheUPDtxt.innerHTML="Cache Installed Successfully.Turn off Internet & Reopen the Browser!!";},1000);}
+	window.applicationCache.addEventListener("progress",DLProgress,false);
+	window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+	window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+	window.applicationCache.onerror=function(e){parent.cacheUPDtxt.innerHTML="Error Installing Cache";
+};
+</script>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+<body class="bg-darker">
+<div id="container"  style="">
+<div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
+<div id=CacheProgress><div id=CacheBar></div></div></div>
+<hr><span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:white;'><h1 id="msgs">LAZARUS KING for 9.00 FW</h1></h1>
+<div class="about2" ><a href="theme.html" >Themes</a></div>
+<br><h1 style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow;'><a class="button" style="color: green;text-shadow: 4px 4px 4px black;font-size:120%; font-weight: bold;">Pass = <span id=passCounter></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  class="button2" style="color: red;text-shadow: 4px 4px 4px black;font-size:120%; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fail = <span id=failCounter></span> </a>
+<div id="myModal" class="modal">
+  <!-- MODAL CONTENTS -->
+  <div class="modal-content">
+  <span class="close"></span>
+    <div class="modal-body">
+
+    <br><br><br>
+    </div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<h1 id=msgs2 style='font-size:25px;text-align:center;color: yellow;'>STATUS</h1>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div style='font-size:20px;text-align:center;color:#87FF33;'>Offline Trainer / Jailbreak</div>
+<br>
+
+<a href="binloader.html"><button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white';margin-left:60px' class="pointer" onMouseOver="msgs2.innerHTML='Loads a bin file sent to the PS4 IP address on port 9020'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Bin Loader </B></button></a>
+<a href="http://night-king.karo218.ir/trainer/index.html"><button  style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white'' class="pointer" onMouseOver="msgs2.innerHTML='Lazarus Offline Trainer'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Offline Trainer </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white'' class="pointer" onclick=load_miraloader() onMouseOver="msgs2.innerHTML='Mira loader Port 9021 for PS4 9.00 Fw'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> MiraLoader </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white'' class="pointer" onclick=load_mira() onMouseOver="msgs2.innerHTML='Mira Orbis For PS4 9.00 Firmware [ First load MiraLoader ]'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Mira </B></button></a>
+<button style='font-size:22px;text-align:center;background:rgba(0,0,0,0.0);color:white';width: 200px;' class="pointer" onclick=load_goldhen20b() onMouseOver="msgs2.innerHTML='GoldHEN 2.0b by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.0b </B></button></a>
+<button style='font-size:22px;text-align:center;background:rgba(0,0,0,0.0);color:white';width: 200px;' class="pointer" onclick=load_goldhen20b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.0b2 by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.0b2 </B></button></a>
+<br><br>
+<div style=font-size:20px;text-align:center;color:#87FF33;>Payloads</div>
+<br>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_ftp() onMouseOver="msgs2.innerHTML='A full access FTP server for the PS4'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> FTP </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_todex() onMouseOver="msgs2.innerHTML='unlocks some debug features available on Devkit'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> ToDex </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_dbackup() onMouseOver="msgs2.innerHTML='Create a backup of important database files ans User Data'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> DB Backup </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_dbrestore() onMouseOver="msgs2.innerHTML='Restore a backup of the database files and User Data'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> DB Restore </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_fanthreshold() onMouseOver="msgs2.innerHTML='Set the desired temperature that the PS4 fan starts'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Fan Selector </B></button><select id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
+<br>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_disableUpdates() onMouseOver="msgs2.innerHTML='Creates dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B>Disable Update</B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_enablebUpdates() onMouseOver="msgs2.innerHTML='Removes the dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Enable Update </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_ebrowser() onMouseOver="msgs2.innerHTML='Enable Browser'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Enable Browser </B></button></a>
+<br>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white;width: 170px' class="pointer" onclick=load_orbistoolbox() onMouseOver="msgs2.innerHTML='Orbis Toolbox Loader Alfa v1190'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Orbis Toolbox </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_ps4debug() onMouseOver="msgs2.innerHTML='Ps4 Debugger '" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Ps4Debug </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_webactivator() onMouseOver="msgs2.innerHTML='PSN Offline Web Activitor - By Sleirsgoevy'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Web Activator </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white;width: 150px;' class="pointer" onclick=load_webrte() onMouseOver="msgs2.innerHTML='Webrte for mods Game'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Webrte </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white;width: 180px;' class="pointer" onclick=load_kerneldumper() onMouseOver="msgs2.innerHTML='Dump Kernel As Bin format File in Your External flash Drive'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Kernel Dumper </B></button></a>
+<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_dumper() onMouseOver="msgs2.innerHTML='Dump Games to a USB drive to be able to create fpkg files'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Dumper Game </B></button></a>
+<br>
+<br><br>
+<script>
+if (localStorage.passcount == null) localStorage.passcount=0;
+window.passCounter.innerHTML=localStorage.passcount;
+if (localStorage.failcount == null) localStorage.failcount=0;
+window.failCounter.innerHTML=localStorage.failcount;
+
+var exec_type = "";
+
+function toogle_payload(){
+var req = new XMLHttpRequest();
+req.responseType = "arraybuffer";
+req.open("GET",PLfile,true);
+req.send();
+req.onreadystatechange=function(){
+if (req.readyState == 4){
+  var tmp0 = new Uint8Array(req.response.byteLength);
+  tmp0.set(new Uint8Array(req.response), 0);
+  var payload = new Uint32Array(tmp0);
+  ghPL = payload;
+  setTimeout(poc, 1500);
+  }
+};
+}
+
+function awaitpl() {
+window.msgs.innerHTML="<h1 style=color:#87FF33>"+LoadedMSG+"</h1>";
+history.pushState({}, '', 'index.html');
+read_ptr_at(0);
+}
+
+function load_miraloader(){
+var script = document.createElement('script');script.src = "mira.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Payload Loading... Please Wait !!!";
+LoadedMSG="Payload Loaded... Press OK Now !!!";
+exec_type = "payload";
+setTimeout(poc,1500);
+}
+
+function load_mira(){
+var script = document.createElement('script');script.src = "mira2.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Mira Orbis... Please Wait !!!";
+LoadedMSG="Mira Orbis Loaded... Press OK Now !!!";
+exec_type = "payload";
+setTimeout(poc,1500);
+}
+
+function load_goldhen20b(){
+msgs.innerHTML="Loading Jailbreak + GoldHEN v2.0b... Please Wait !!!";
+LoadedMSG="GoldHEN v2.0b Loaded... Press OK Now !!!";
+PLfile = "goldhen_2.0b.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_goldhen20b2(){
+msgs.innerHTML="Loading Jailbreak + GoldHEN v2.0b2... Please Wait !!!";
+LoadedMSG="GoldHEN v2.0b2 Loaded... Press OK Now !!!";
+PLfile = "goldhen_2.0b2.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_todex(){
+msgs.innerHTML="Loading Jailbreak + ToDex... Please Wait !!!";
+LoadedMSG="ToDex Loaded... Press OK Now !!!";
+PLfile = "todex.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_kerneldumper(){
+msgs.innerHTML="Loading Jailbreak + Kernel Dumper... Please Wait !!!";
+LoadedMSG="Kernel Dumper Loaded... Press OK Now !!!";
+PLfile = "kerneldumper.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_dumper(){
+msgs.innerHTML="Loading Jailbreak + Dumper... Please Wait !!!";
+LoadedMSG="Dumper Loaded... Press OK Now !!!";
+PLfile = "gamedumper.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_ftp(){
+msgs.innerHTML="Loading Jailbreak + FTP... Please Wait !!!";
+LoadedMSG="FTP Loaded... Press OK Now !!!";
+PLfile = "ftp.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_webrte(){
+msgs.innerHTML="Loading Jailbreak + WebRte... Please Wait !!!";
+LoadedMSG="WebRte Loaded... Press OK Now !!!";
+PLfile = "webrte.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_ps4debug(){
+msgs.innerHTML="Loading Jailbreak + Ps4Debug... Please Wait !!!";
+LoadedMSG="Ps4Debug Loaded... Press OK Now !!!";
+PLfile = "ps4debug.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_dbackup(){
+msgs.innerHTML="Loading Jailbreak + Ps4Debug... Please Wait !!!";
+LoadedMSG="DB Backup Loaded... Press OK Now !!!";
+PLfile = "backup.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_dbrestore(){
+msgs.innerHTML="Loading Jailbreak + DB Restore... Please Wait !!!";
+LoadedMSG="DB Restore Loaded... Press OK Now !!!";
+PLfile = "restore.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_enablebUpdates(){
+msgs.innerHTML="Loading Jailbreak + Enable Updates... Please Wait !!!";
+LoadedMSG="Enable Updates Loaded... Press OK Now !!!";
+PLfile = "enableupdate.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_disableUpdates(){
+msgs.innerHTML="Loading Jailbreak + Disable Updates... Please Wait !!!";
+LoadedMSG="Disable Updates Loaded... Press OK Now !!!";
+PLfile = "disableupdates.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_fanthreshold(){
+var script = document.createElement('script');script.src = "fanthreshold.js";localStorage.setItem('fanthreshold', tempC.value);document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Fan Threshold... Please Wait !!!";
+LoadedMSG="Fan Threshold Loaded... Press OK Now !!!";
+exec_type = "payload";
+setTimeout(poc,1500);
+}
+
+function load_webactivator(){
+var script = document.createElement('script');script.src = "webactivator.js";document.getElementsByTagName('head')[0].appendChild(script);
+msgs.innerHTML="Loading Jailbreak + Web Activator... Please Wait !!!";
+LoadedMSG="Web Activator Loaded... Press OK Now !!!";
+exec_type = "payload";
+setTimeout(poc,1500);
+}
+
+function load_orbistoolbox(){
+msgs.innerHTML="Loading Jailbreak + Orbis Toolbox Alfa v1190... Please Wait !!!";
+LoadedMSG="Orbis Toolbox Alfa v1190 Loaded... Press OK Now !!!";
+PLfile = "OrbisToolbox900.bin";
+exec_type = "payload";
+toogle_payload();
+}
+</script>
+<script type="text/javascript">
+ if(localStorage.getItem("theme")==null){
+   localStorage.setItem("theme","1.jpg")
+ }
+ document.body.style.background = "url('"+localStorage.getItem("theme")+"')"
+ document.body.style.backgroundSize = "cover"
+ var imgs = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg","31.jpg","32.jpg","33.jpg"];
+ render()
+ function render(){
+     document.querySelector(".themes").innerHTML=""
+	 for(let i=0;i<imgs.length;i++){
+	    var selectText = "Select"
+	    var textColor = "white"
+	    if(localStorage.theme==imgs[i]){
+	      selectText="Selected"
+	      textColor="green"
+	    }
+	 	document.querySelector(".themes").innerHTML+='<div class="theme" ><img src="img/'+imgs[i]+'" ><span style="color:'+textColor+';" onclick="set('+i+')">'+selectText+'</span></div>';
+	 }
+ }
+ function set(i){
+    localStorage.setItem("theme",imgs[i])
+    render()
+ 	document.body.style.background = "url('"+imgs[i]+"')"
+ 	document.body.style.backgroundSize = "cover"
+ }
+</script>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+<script>
+for(var i=40; i<=79; i++){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+</body>
+</html>
