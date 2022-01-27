@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html manifest="Lazarus900.cache"><head>
 <title>LAZARUS PS4 9.00 JB</title>
 <link rel="stylesheet prefetch" href="Style.css">
@@ -52,20 +52,20 @@ overflow: hidden;
 
 		button2:focus,
 		button2:hover {
-		  color: White;
-		  box-shadow: 0 5px 50px 0 white;
+		  color: #f7872d;
+		  box-shadow: 0 5px 50px 0 #f73610;
 		  background-color: #87FF33;
           border-radius: 10px;
 		}
 		
         button {
                     background-color: white;
-                    border: 2px solid black;
+                    border: 2px solid #f7872d;
                     border-radius: 10px;
                     text-align: center;
         }
         button:hover {
-                    box-shadow: 0 5px 50px 0 white;
+                    box-shadow: 0 5px 50px 0 #f7872d;
                     color: white;
                     border-radius: 10px;
         }
@@ -73,11 +73,11 @@ h1 {
 text-shadow: 0.1em 0.1em 0.2em black;
 font-size: 25px;
 text-align: center;
-color: white;
+color: #f7e4d0;
 }
 .btn {
 background-color: #003263;
-color: white;
+color: #f78f1f;
 width: 260px;
 height: 49px;
 padding-bottom: 5px;
@@ -96,7 +96,7 @@ cursor: pointer;
 border-radius: 8px;
 }
 .btn:hover {
-background-color: #0058b1;
+background-color: #f78f1f;
 }
 .btn-toolbox {
 background-color: #ae2301;
@@ -129,9 +129,11 @@ function DisplayCacheProgress(){
 <div id="container"  style="">
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
-<hr><span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:white;'><h1 id="msgs">LAZARUS PS4 9.00 JB</h1></h1>
-<div class="about2" ><a href="theme.html" >Themes</a></div>
+<hr><span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:white;'><h1 id="msgs">.★☆★..:LAZARUS PS4 9.00 JB:..★☆★.</h1></h1>
+<div class="about" ><a href="theme.html" >Themes</a></div>
+<div class="about2" ><a href="credits.html" >About</a></div>
 
+<h1 id=msgs2 style='font-size:25px;text-align:center;color: #13daf7;'> </h1>
 <div id="myModal" class="modal">
   <!-- MODAL CONTENTS -->
   <div class="modal-content">
@@ -157,33 +159,31 @@ window.onclick = function(event) {
 }
 </script>
 
-<h1 id=msgs2 style='font-size:25px;text-align:center;color: yellow;'>STATUS</h1>
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 <div style='font-size:20px;text-align:center;color:#87FF33;'>Offline Trainer / Jailbreak</div>
+<a href="binloader.html"><button style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#4cedf7';margin-left:60px' class="pointer" onMouseOver="msgs2.innerHTML='Loads a bin file sent to the PS4 IP address on port 9020'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Bin Loader </B></button></a>
+<button style='font-size:22px;text-align:center;background-color:#f7a234;color:#4cedf7';width: 200px;' class="pointer" onclick=load_goldhen20b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.0b2 by SISTRo'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> GoldHen II </B></button></a>
+<a href="http://prb123.ir/leefultrainer/index.html"><button  style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#4cedf7'' class="pointer" onMouseOver="msgs2.innerHTML='Lazarus Offline Trainer'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Offline Trainer </B></button></a>
 <br>
-<a href="binloader.html"><button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white';margin-left:60px' class="pointer" onMouseOver="msgs2.innerHTML='Loads a bin file sent to the PS4 IP address on port 9020'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Bin Loader </B></button></a>
-<a href="http://prb123.ir/leefultrainer/index.html"><button  style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white'' class="pointer" onMouseOver="msgs2.innerHTML='Lazarus Offline Trainer'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Offline Trainer </B></button></a>
-<button style='font-size:22px;text-align:center;background:rgba(0,0,0,0.0);color:white';width: 200px;' class="pointer" onclick=load_goldhen20b() onMouseOver="msgs2.innerHTML='GoldHEN 2.0b by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.0b </B></button></a>
-<button style='font-size:22px;text-align:center;background:rgba(0,0,0,0.0);color:white';width: 200px;' class="pointer" onclick=load_goldhen20b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.0b2 by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GoldHen 2.0b2 </B></button></a>
-<br><br>
 <div style=font-size:20px;text-align:center;color:#87FF33;>Payloads</div>
-<br>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white;width: 150px;' class="pointer" onclick=load_webrte() onMouseOver="msgs2.innerHTML='Webrte for mods Game'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Webrte </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_todex() onMouseOver="msgs2.innerHTML='unlocks some debug features available on Devkit'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> ToDex </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_dbackup() onMouseOver="msgs2.innerHTML='Create a backup of important database files ans User Data'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> DB Backup </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_dbrestore() onMouseOver="msgs2.innerHTML='Restore a backup of the database files and User Data'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> DB Restore </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_fanthreshold() onMouseOver="msgs2.innerHTML='Set the desired temperature that the PS4 fan starts'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Fan Selector </B></button><select id="tempC"></select><a style='font-size:17px;text-align:center;color:white;'>&#176;C</a>
-<br>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white;width: 170px' class="pointer" onclick=load_orbistoolbox() onMouseOver="msgs2.innerHTML='Orbis Toolbox Loader Alfa v1190'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Orbis Toolbox </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_disableUpdates() onMouseOver="msgs2.innerHTML='Creates dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B>Disable Update</B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_enablebUpdates() onMouseOver="msgs2.innerHTML='Removes the dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Enable Update </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_ebrowser() onMouseOver="msgs2.innerHTML='Enable Browser'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Enable Browser </B></button></a>
-<br>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_ps4debug() onMouseOver="msgs2.innerHTML='Ps4 Debugger '" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Ps4Debug </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_ftp() onMouseOver="msgs2.innerHTML='A full access FTP server for the PS4'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> FTP </B></button></a>
-<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_webactivator() onMouseOver="msgs2.innerHTML='PSN Offline Web Activitor - By Sleirsgoevy'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Web Activator </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white;width: 180px;' class="pointer" onclick=load_kerneldumper() onMouseOver="msgs2.innerHTML='Dump Kernel As Bin format File in Your External flash Drive'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Kernel Dumper </B></button></a>
-<button style='font-size:20px;text-align:center;background:rgba(0,0,0,0.0);color:white' class="pointer" onclick=load_dumper() onMouseOver="msgs2.innerHTML='Dump Games to a USB drive to be able to create fpkg files'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Game Dumper</B></button></a>
+
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7;width: 150px;' class="pointer" onclick=load_webrte() onMouseOver="msgs2.innerHTML='Webrte for mods Game'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Webrte </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_todex() onMouseOver="msgs2.innerHTML='unlocks some debug features available on Devkit'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> ToDex </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_dbackup() onMouseOver="msgs2.innerHTML='Create a backup of important database files ans User Data'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> DB Backup </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_dbrestore() onMouseOver="msgs2.innerHTML='Restore a backup of the database files and User Data'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> DB Restore </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_fanthreshold() onMouseOver="msgs2.innerHTML='Set the desired temperature that the PS4 fan starts'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Fan Selector </B></button><select id="tempC"></select><a style='font-size:17px;text-align:center;color:#4cedf7;'>&#176;C</a>
+<br><br>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7;width: 170px' class="pointer" onclick=load_orbistoolbox() onMouseOver="msgs2.innerHTML='Orbis Toolbox Loader Alfa v1190'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Orbis Toolbox </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_disableUpdates() onMouseOver="msgs2.innerHTML='Creates dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B>Disable Update</B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_enablebUpdates() onMouseOver="msgs2.innerHTML='Removes the dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Enable Update </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_ebrowser() onMouseOver="msgs2.innerHTML='Enable Browser'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Enable Browser </B></button></a>
+<br><br>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_ps4debug() onMouseOver="msgs2.innerHTML='Ps4 Debugger '" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Ps4Debug </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_ftp() onMouseOver="msgs2.innerHTML='A full access FTP server for the PS4'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> FTP </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_webactivator() onMouseOver="msgs2.innerHTML='PSN Offline Web Activitor - By Sleirsgoevy'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Web Activator </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7;width: 180px;' class="pointer" onclick=load_kerneldumper() onMouseOver="msgs2.innerHTML='Dump Kernel As Bin format File in Your External flash Drive'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Kernel Dumper </B></button></a>
+<button style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#4cedf7' class="pointer" onclick=load_dumper() onMouseOver="msgs2.innerHTML='Dump Games to a USB drive to be able to create fpkg files'" ; onmouseout="msgs2.innerHTML=' '" type="button"><B> Game Dumper</B></button></a>
+
 <br>
 <br><br>
 <script>
