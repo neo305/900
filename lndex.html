@@ -1,5 +1,6 @@
 ﻿<html>
 <head>
+
 <style>
     html, body{
 //background-image: url('1.jpg');
@@ -210,8 +211,8 @@ opacity:0;
   
     </style>
 <meta charset="utf-8">
-<title>.●★☆★●..:LAZARUS PS4 Auto Exploit 9.00:..●☆●.</title>
-<link rel="stylesheet prefetch" href="nelu.css">
+<title>.●★☆★●..:LAZARUS PS4 Host Auto Exploit Light 9.00 JB:..●☆●.</title>
+<link rel="stylesheet prefetch" href="Style.css">
 <script>
 function load_poc(){
 var xhr = new XMLHttpRequest();
@@ -344,88 +345,75 @@ alert("Payload Loaded. Send payloads to port 9021");
 }
 
 function goldhen2(){
-    progress.innerHTML="Goldhen 2.0b2 Loading... Please Wait";
-    LoadedMSG="GoldHEN II Loaded";
-    PLfile = "goldhen.bin";
+    progress.innerHTML="Goldhen 2.0b2 loading... please wait";
+    LoadedMSG="GoldHEN 2.0b2 Loaded";
+    PLfile = "goldhen2b2.bin";
     out_jb = "AllPL";
     load_poc();
 }
 
 function load_PS4Debug(){
-    progress.innerHTML="PS4Debug Loading... Please Wait"; LoadedMSG="PS4Debug Loaded";
+    progress.innerHTML="PS4Debug loading... please wait"; LoadedMSG="PS4Debug Loaded";
     PLfile = "ps4debug.bin";
     out_jb = "AllPL";
     load_poc();
 }
 
 function load_App2USB(){
-    progress.innerHTML="app2usb Loading... Please Wait"; LoadedMSG="app2usb Loaded";
+    progress.innerHTML="app2usb loading... please wait"; LoadedMSG="app2usb Loaded";
     PLfile = "app2usb.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_AppDumper(){
-    progress.innerHTML="AppDumper Loading... Please Wait"; LoadedMSG="AppDumper Loaded";
+    progress.innerHTML="AppDumper loading... please wait"; LoadedMSG="AppDumper Loaded";
     PLfile = "app-dumper.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_DisableUpdates(){
-    progress.innerHTML="DisableUpdates Loading... Please Wait"; LoadedMSG="DisableUpdates Loaded";
+    progress.innerHTML="DisableUpdates loading... please wait"; LoadedMSG="DisableUpdates Loaded";
     PLfile = "disableupdates.bin";
     out_jb = "AllPL";
     load_poc();
 }
 
 function load_EnableUpdates(){
-    progress.innerHTML="EnableUpdates Loading... Please Wait"; LoadedMSG="EnableUpdates Loaded";
+    progress.innerHTML="EnableUpdates loading... please wait"; LoadedMSG="EnableUpdates Loaded";
     PLfile = "enableupdates.bin";
     out_jb = "AllPL";     load_poc();
 }
   
 function load_Orbis(){
-    progress.innerHTML="Orbis-Toolbox Loading... Please Wait"; LoadedMSG="Orbis-Toolbox Loaded";
+    progress.innerHTML="Orbis-Toolbox loading... please wait"; LoadedMSG="Orbis-Toolbox Loaded";
     PLfile = "Orbis-Toolbox-900.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_WebRTE(){
-    progress.innerHTML="Payload Loading... Please Wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "WebRTE.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function Mloader(){
-    progress.innerHTML="Payload Loading... Please Wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "MiraLoader.bin";
     out_jb = "MLD";
     load_poc();
 }
 
 function Bloader(){
-    progress.innerHTML="Payload Loading... Please Wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     out_jb = "BinLD";
     LoaderPL();
 }
 
 function load_ToDex(){
-    progress.innerHTML="Payload Loading... Please Wait"; LoadedMSG="Payload Loaded";
+    progress.innerHTML="Payload loading... please wait"; LoadedMSG="Payload Loaded";
     PLfile = "ToDex.bin";
     out_jb = "AllPL";     load_poc();
 }
-
-function load_RestoreDB(){
-    progress.innerHTML="Payload Loading... Please Wait"; LoadedMSG="Payload Loaded";
-    PLfile = "restoredb.bin";
-    out_jb = "AllPL";     load_poc();
-}
-
-function load_BackupDB(){
-    progress.innerHTML="Payload Loading... Please Wait"; LoadedMSG="Payload Loaded";
-    PLfile = "backupdb.bin";
-    out_jb = "AllPL";     load_poc();
-}
-
 </script>
 <script src="int64.js"></script>
 <script src="rop.js"></script>
@@ -440,6 +428,7 @@ function load_BackupDB(){
 <div class="about2" ><a href="credits.html" >About</a></div>
 <h1 id=progress style='font-size:25px;text-align:center;color:#3ee3f7;'>.:Status:.</h1><br>
 <div id="myModal" class="modal">
+  <!-- MODAL CONTENTS -->
   <div class="modal-content">
   <span class="close"></span>
     <div class="modal-body">
@@ -463,26 +452,25 @@ window.onclick = function(event) {
 }
 </script>
 <br>
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 <div style='font-size:20px;text-align:center;color:#8bf78e;'>.: Offline Trainer + Jailbreak :.</div>
 
 <div id=all style="text-align:center;">
-<a href="http://prb123.ir/leefultrainer/index.html"><button  style='font-size:20px;text-align:center;width: 220px;background:rgba(0, 191, 255, 0.75);color:#72f7b1'' class="pointer" onMouseOver="progress.innerHTML='Lazarus Offline Trainer'" ; onmouseout="progress.innerHTML='.:Status:.'" type="button"><B> Offline Trainer </B></button></a>
-<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.0b2 by SISTR0 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="goldhen2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 220px;height: 60px;background:rgba(255, 140, 0, 0.75);color:white' > GoldHen II </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='With this Payload Activates WebRTE Trainer on PS4 FirmWare 9.00 '"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_WebRTE()" style='font-size:20px;text-align:center;width: 220px;background:rgba(0, 191, 255, 0.75);color:#72f7b1' > WebRTE </button>
+<a href="http://prb123.ir/leefultrainer/index.html"><button  style='font-size:20px;text-align:center;width: 220px;background:rgba(0, 191, 255, 0.75);color:#72f7b1'' class="pointer" onMouseOver="progress.innerHTML='Lazarus Offline Trainer'" ; onmouseout="progress.innerHTML'Status'" type="button"><B> Offline Trainer </B></button></a>
+<button id="button-Payload" onMouseOver="progress.innerHTML='GoldHen v2.0b2 by SISTR0 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="goldhen2()" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;width: 220px;height: 60px;background:rgba(255, 140, 0, 0.75);color:white' > GoldHen II </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='With this Payload Activates WebRTE Trainer on PS4 FirmWare 9.00 '"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_WebRTE()" style='font-size:20px;text-align:center;width: 220px;background:rgba(0, 191, 255, 0.75);color:#72f7b1' > WebRTE </button>
 <br><br>
 <div style=font-size:20px;text-align:center;color:#8bf78e;>.: Payloads :.</div>
-<button id="button-Payload" onMouseOver="progress.innerHTML='ps4debug for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_PS4Debug()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Ps4 Debug </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Orbis Toolbox </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='unlocks some debug features available on testkit'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_ToDex()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > ToDex </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_DisableUpdates()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' >Disable Updates</button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_EnableUpdates()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Enable Updates </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='ps4debug for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_PS4Debug()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Ps4debug </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Orbis Toolbox Loader Alfa 1190 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_Orbis()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Orbis Toolbox </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='unlocks some debug features available on testkit'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_ToDex()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > ToDex </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Creates dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_DisableUpdates()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' >Disable Updates</button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Removes the dummy files in the PS4 update folder'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_EnableUpdates()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Enable Update </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Dump Games to a USB drive to be able to create fpkg files'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_AppDumper()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Dumper Game </button>
 <br><br>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Create a Backup of User User Data'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_BackupDB()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Backup DB </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Restore by USB a backup copy of user data'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_RestoreDB()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Restore DB </button>
-<a href="web.html"><button  onMouseOver="progress.innerHTML='Web Activador PSN x Sleirsgoevy'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" style='font-size:20px;text-align:center;text-shadow: 4px 4px 4px black;background:rgba(255, 255, 255, 0.25);color:#11c4f7'>PSN <font color=#4ebba6>Activator</button></a>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > BinLoader </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Dump Games to a USB drive to be able to create fpkg files'"; onmouseout="progress.innerHTML='.:Status:.'" type="button" onclick="load_AppDumper()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > Game Dumper </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Move installed games to an external USB drive'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="load_App2USB()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > App2USB </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Binloader Port 9020 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Bloader()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > BinLoader </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Mira loader Port 9021 for PS4 FirmWare 9.00'"; onmouseout="progress.innerHTML='Status'" type="button" onclick="Mloader()" style='font-size:20px;text-align:center;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > MiraLoader </button>
 </div>
 <br><br>
 
@@ -541,5 +529,6 @@ for(var i=50; i<=80; i=i+5){
 tempC.value=60;
 </script>
 </body>
+
 
 </html>
