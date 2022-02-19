@@ -39,6 +39,8 @@ CACHE MANIFEST
 41.jpg
 42.jpg
 43.jpg
+44.jpg
+45.jpg
 5.jpg
 6.jpg
 7.jpg
@@ -49,9 +51,9 @@ binloader.js
 exploit.js
 fanthreshold.js
 ftp.bin
+gamedumper.bin
 GET.html
-goldhen_2.0b2.bin
-index-2.html
+goldhen.bin
 index.html
 int64.js
 int64b.js
