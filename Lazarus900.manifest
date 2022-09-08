@@ -1,6 +1,13 @@
 CACHE MANIFEST 
 
 CACHE: 
+cache/index.html 
+cache/int64.js
+cache/kexploit.js
+cache/ps4.jpg
+cache/rop.js
+cache/webkit.js
+cache/restore.bin
 1.jpg
 10.jpg
 11.jpg
