@@ -1,0 +1,9 @@
+PSFree900 Repository Files:
+- index.html: https://raw.githubusercontent.com/ciss84/PSFree900/main/index.html
+- lapse.js: https://raw.githubusercontent.com/ciss84/PSFree900/main/lapse.js
+- psfree.js: https://raw.githubusercontent.com/ciss84/PSFree900/main/psfree.js
+- loader.js: https://raw.githubusercontent.com/ciss84/PSFree900/main/loader.js
+
+To download manually, you can:
+1. Visit the URLs above in your browser
+2. Or clone the repository: git clone https://github.com/ciss84/PSFree900.git
