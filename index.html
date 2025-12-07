@@ -1,4 +1,4 @@
-﻿<html manifest="Lazarus900.manifest">
+<html manifest="Lazarus900.manifest">
 <head>
 <style>
     html, body{
@@ -189,19 +189,65 @@ button:hover {
 
     </style>
 <meta charset="utf-8">
-<title>LAZARUS PS4 Host Auto Exploit Light 9.00 JB</title>
+<title>LAZARUS PS4 Host Auto Exploit - Lapse (FW 7.00-9.60)</title>
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
-			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page !!"; }, 1500);};
-			window.applicationCache.onnoupdate=function(){window.location.replace("lndex.html");};
-        	window.applicationCache.onerror=function(){window.location.replace("lndex.html");};
+			function showMessage(msg) {
+				document.getElementById("message").innerHTML = msg;
+			}
 		</script>
+		<script>
+			// Application cache handlers (for offline support)
+			window.applicationCache.ondownloading=function(){
+				var progressEl = document.getElementById("progress");
+				if (progressEl) progressEl.innerHTML="Page Caching Started!!";
+			};
+			window.applicationCache.onprogress=function(a){
+				var progressEl = document.getElementById("progress");
+				if (progressEl) progressEl.innerHTML="Caching: " + (Math.round(100*(a.loaded/a.total)))+"%";
+			};
+			window.applicationCache.oncached=function(){
+				var progressEl = document.getElementById("progress");
+				if (progressEl) {
+					progressEl.innerHTML="Page Cached Successfully!!";
+					setTimeout(function(){
+						if (progressEl) progressEl.innerHTML="Turn Off the Internet & Reopen the Page !!";
+					}, 1500);
+				}
+			};
+			window.applicationCache.onnoupdate=function(){
+				// Cache is up to date, proceed to main exploit page
+				setTimeout(function(){window.location.replace("lndex.html");}, 500);
+			};
+        	window.applicationCache.onerror=function(){
+				// Cache error, proceed anyway
+				console.log("Cache error, proceeding to exploit page");
+				setTimeout(function(){window.location.replace("lndex.html");}, 500);
+			};
+		</script>
+    <!-- Lapse Exploit Integration -->
+    <!-- Load the Lapse exploit loader -->
+    <script src="lapse-loader.js"></script>
+    <!-- Legacy loader.js support (optional, for backward compatibility) -->
+    <script src="loader.js" onerror="console.log('loader.js not found, using Lapse exploit loader instead')"></script>
 </head>
 <body style='background:transparent'>
-<h1 style='font-family: juma;text-shadow: 4px 4px 4px black;font-size:37px;text-align:center;text-shadow: 4px 4px 4px black;color:#13daf7;margin-top:1%;'>.★☆★..:LAZARUS PS4 Auto Exploit 9.00:..★☆★.</h1>
-<h1 id=progress style='font-family: juma;font-size:44px;text-align:center;text-shadow: 4px 4px 4px black;color:#9eff63;margin-top:17%;'>...Please Wait... Processing Hack...</h1><br>
-
+<h1 style='font-family: juma;text-shadow: 4px 4px 4px black;font-size:37px;text-align:center;text-shadow: 4px 4px 4px black;color:#13daf7;margin-top:1%;'>.★☆★..:LAZARUS PS4 Auto Exploit 9.00 (Lapse):..★☆★.</h1>
+<h1 id=progress style='font-family: juma;font-size:44px;text-align:center;text-shadow: 4px 4px 4px black;color:#9eff63;margin-top:17%;'>...Please Wait... Loading Lapse Exploit...</h1>
+<div id="message" style='color:#fff;font-size:35px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;'></div><br>
+<div style="background-color:#032140;color:white;position:fixed;left:0;bottom:-0px;width:100%;text-align:center;">
+<font style='color:#87FF33'>Modder & Dev : </font><a href="https://twitter.com/84Ciss" style='font-size:20px;text-align:center;color:yellow;'>@84Ciss</a> - Find Me In Tweeter if you have any kind of issues !&nbsp;<font style="font-size: 20px";style='color:#87FF33'>Pass = <span style="color:green" id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span style="color:red" id=failCounter></span></font>
+<br><font style='color:#87FF33'>Special thanks : </font>*Many Many Thanks to all Contributors in PS4 Scene ∆❍X❑*<br>
+</div>
+<script>
+	if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount = 0;
+	if (localStorage.passCounter == null || localStorage.passCounter == undefined) {
+		passCounter.innerHTML = localStorage.passcount;
+	}
+	if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount = 0;
+	if (localStorage.failCounter == null || localStorage.failCounter == undefined) {
+		failCounter.innerHTML = localStorage.failcount;
+	}
+</script>
 </body>
 
 </html>
