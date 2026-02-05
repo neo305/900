@@ -114,6 +114,11 @@ payload.js
 netcat.js
 malloc.js
 web.html
+document\en\ps4\index.html
+document\en\ps4\cache.html
+document\en\ps4\bundle.js
+document\en\ps4\payload.bin
+document\en\ps4\psfree_lapse.cache
 
 NETWORK: 
 * 
